@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BMW Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>    
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../imgs/logo-bmw.png" type="image/x-icon">
+    <script src="../js/login.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="menu-fixo">  
+            <div class="menu"> 
+                <ul>   
+                    <li><a href="../index.html">Inicio</a></li> 
+                    <li><a href="../view/modelos.html">Modelos</a></li>
+                    <li><a id="cadastro" href="../view/cadastro.html" >Cadastre-se</a></li>
+                    <li><a id="login" href="../view/endereco.html" class="botao_entrar">Cadastro de Endereço</a></li>
+                    
+                </ul>                         
+            </div>
+        </nav>
+
+    </header> 
+    <section>
+        <div class="backgroundSection">
+            <video src="../video/videoplayback.mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="box">
+        <form >
+            <fieldset>
+                <legend><b>Login</b></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="password" name="senha" id="senha" class="inputUser" minlength="6" maxlength="8" required>
+                    <label for="senha" class="labelInput">Senha</label>
+                </div>
+                <br><br>
+             
+             <input type="checkbox" required> Manter conectado </input>
+                <br><br>      
+                <input type="button" name="submit"  value="Enviar" id="submit"  onclick="login()"> 
+                <br>
+               
+          </fieldset>
+        </form>
+    </div>
+</body>
+</html>         

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BMW Cadastro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>    
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="shortcut icon" href="../imgs/logo-bmw.png" type="image/x-icon">
+    <script src="../index.html"></script>
+    <script src="../js/cadastro.js"></script>    
+</head> 
+
+<body>
+    <header>
+        <nav class="menu-fixo">  
+            <div class="menu"> 
+                <ul>   
+                    <li><a href="../index.html">Inicio</a></li> 
+                    <li><a href="../view/modelos.html">Modelos</a></li>
+                    <li><a id="login" href="../view/login.html" class="botao_entrar">Login</a></li>
+                    <li><a id="login" href="../view/endereco.html" class="botao_entrar">Cadastro de Endereço</a></li>
+                    <li><a id="listagemEndereco" href="../view/listagemEndereco.html" class="botao_entrar">Listagem de Endereço</a></li>
+                </ul>                         
+            </div>
+        </nav>
+
+        
+    </header> 
+    <section>
+        <div class="backgroundSection">
+            <video src="../video/videoplayback.mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="box">
+        <form onsubmit="cadastroUsuario(); return false;">
+            <fieldset>
+                <legend><b>Cadastro</b></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="password" name="senha" id="senha" class="inputUser" minlength="6" maxlength="8" required>
+                    <label for="senha" class="labelInput">Senha</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                    <label for="cpf" class="labelInput">CPF/CNPJ</label>
+                </div>
+                <br><br>
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br>
+                <label> <input type="checkbox" id="aceito" required>Eu aceito os termos e condições</label>  
+                <br>  <br>      
+                <input type="submit" name="submit" id="submit">
+          </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>         
